@@ -1,0 +1,177 @@
+object EditorWindow: TEditorWindow
+  Left = 517
+  Height = 768
+  Top = 83
+  Width = 1024
+  Caption = 'Окно редактора'
+  ClientHeight = 768
+  ClientWidth = 1024
+  Constraints.MaxHeight = 768
+  Constraints.MaxWidth = 1024
+  Constraints.MinHeight = 768
+  Constraints.MinWidth = 1024
+  OnClose = FormClose
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 14
+    Top = 24
+    Width = 98
+    Caption = 'Название теста:'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 224
+    Height = 633
+    Top = 87
+    Width = 792
+    ClientHeight = 633
+    ClientWidth = 792
+    TabOrder = 0
+    object SaveButton: TButton
+      Left = 689
+      Height = 25
+      Top = 601
+      Width = 96
+      Caption = 'Сохранить'
+      TabOrder = 0
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 14
+      Top = 9
+      Width = 118
+      Caption = 'Название вопроса:'
+      ParentColor = False
+    end
+    object QuestionName: TEdit
+      Left = 8
+      Height = 27
+      Top = 33
+      Width = 777
+      TabOrder = 1
+    end
+    object Label4: TLabel
+      Left = 8
+      Height = 14
+      Top = 72
+      Width = 110
+      Caption = 'Варианты ответа:'
+      ParentColor = False
+    end
+    object Answer1: TEdit
+      Left = 8
+      Height = 27
+      Top = 104
+      Width = 648
+      TabOrder = 2
+    end
+    object Answer2: TEdit
+      Left = 8
+      Height = 27
+      Top = 136
+      Width = 648
+      TabOrder = 3
+    end
+    object Label5: TLabel
+      Left = 665
+      Height = 14
+      Top = 72
+      Width = 104
+      Caption = 'Верный вариант'
+      ParentColor = False
+    end
+    object RadioButton1: TRadioButton
+      Left = 665
+      Height = 23
+      Top = 108
+      Width = 23
+      Checked = True
+      TabOrder = 4
+      TabStop = True
+    end
+    object RadioButton2: TRadioButton
+      Left = 664
+      Height = 23
+      Top = 140
+      Width = 23
+      TabOrder = 5
+    end
+    object AddAnswerButton: TButton
+      Left = 8
+      Height = 25
+      Top = 601
+      Width = 75
+      Caption = '+'
+      OnClick = AddAnswerButtonClick
+      TabOrder = 6
+    end
+    object DeleteAnswerButton: TButton
+      Left = 96
+      Height = 25
+      Top = 601
+      Width = 75
+      Caption = '-'
+      OnClick = DeleteAnswerButtonClick
+      TabOrder = 7
+    end
+  end
+  object Panel2: TPanel
+    Left = 8
+    Height = 632
+    Top = 88
+    Width = 216
+    ClientHeight = 632
+    ClientWidth = 216
+    TabOrder = 1
+    object ListBox1: TListBox
+      Left = 8
+      Height = 560
+      Top = 32
+      Width = 200
+      ItemHeight = 0
+      ScrollWidth = 198
+      TabOrder = 0
+      TopIndex = -1
+    end
+    object Label2: TLabel
+      Left = 8
+      Height = 14
+      Top = 8
+      Width = 108
+      Caption = 'Список вопросов'
+      ParentColor = False
+    end
+    object CreateButton: TButton
+      Left = 8
+      Height = 25
+      Top = 600
+      Width = 96
+      Caption = 'Добавить'
+      TabOrder = 1
+    end
+    object DeleteButton: TButton
+      Left = 112
+      Height = 25
+      Top = 600
+      Width = 96
+      Caption = 'Удалить'
+      TabOrder = 2
+    end
+  end
+  object CompletedButton: TButton
+    Left = 912
+    Height = 25
+    Top = 728
+    Width = 96
+    Caption = 'Завершить'
+    TabOrder = 2
+  end
+  object TestName: TEdit
+    Left = 16
+    Height = 27
+    Top = 56
+    Width = 992
+    TabOrder = 3
+  end
+end

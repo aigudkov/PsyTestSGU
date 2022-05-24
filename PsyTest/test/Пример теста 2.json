@@ -1,0 +1,43 @@
+{
+  "test" : "Пример теста 2",
+  "questions" : [
+    {
+      "title" : "Вопрос 1",
+      "answers" : [
+        {
+          "name" : "Ответ 1",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Ответ 2",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "Вопрос 1",
+      "answers" : [
+        {
+          "name" : "Ответ 1",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Ответ 2",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Ответ 3",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Ответ 4",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Ответ 5",
+          "correctAnswer" : false
+        }
+      ]
+    }
+  ]
+}

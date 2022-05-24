@@ -1,0 +1,42 @@
+object TestWindow: TTestWindow
+  Left = 615
+  Height = 768
+  Top = 146
+  Width = 1024
+  Caption = 'Название теста'
+  ClientHeight = 768
+  ClientWidth = 1024
+  Constraints.MaxHeight = 768
+  Constraints.MaxWidth = 1024
+  Constraints.MinHeight = 768
+  Constraints.MinWidth = 1024
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object NumberQuestionLabel: TLabel
+    Left = 16
+    Height = 14
+    Top = 738
+    Width = 199
+    Caption = 'Количество пройденных тестов'
+    ParentColor = False
+  end
+  object QuestionLabel: TLabel
+    Left = 16
+    Height = 14
+    Top = 24
+    Width = 47
+    Caption = 'Вопрос'
+    ParentColor = False
+  end
+  object NextButton: TButton
+    Left = 896
+    Height = 24
+    Top = 728
+    Width = 109
+    Caption = 'Дальше'
+    OnClick = NextButtonClick
+    TabOrder = 0
+  end
+end

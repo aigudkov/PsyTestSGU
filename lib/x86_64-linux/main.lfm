@@ -1,0 +1,210 @@
+object MainForm: TMainForm
+  Left = 396
+  Height = 768
+  Top = 142
+  Width = 1024
+  Caption = 'PsyTestSGU'
+  ClientHeight = 744
+  ClientWidth = 1024
+  Constraints.MaxHeight = 768
+  Constraints.MaxWidth = 1024
+  Constraints.MinHeight = 768
+  Constraints.MinWidth = 1024
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnShow = ButtonBackUserClick
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object PanelMain: TPanel
+    Left = 16
+    Height = 368
+    Top = 16
+    Width = 424
+    ClientHeight = 368
+    ClientWidth = 424
+    TabOrder = 0
+    object ButtonAdmin: TButton
+      Left = 75
+      Height = 84
+      Top = 66
+      Width = 274
+      Caption = 'Администратор'
+      Font.Height = -19
+      OnClick = ButtonAdminClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object ButtonUser: TButton
+      Left = 75
+      Height = 84
+      Top = 216
+      Width = 274
+      Caption = 'Пользователь'
+      Font.Height = -19
+      OnClick = ButtonUserClick
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object PanelAuthorizationUser: TPanel
+    Left = 584
+    Height = 368
+    Top = 16
+    Width = 424
+    ClientHeight = 368
+    ClientWidth = 424
+    TabOrder = 1
+    Visible = False
+    object LabelAuthorizationUser: TLabel
+      Left = 168
+      Height = 14
+      Top = 16
+      Width = 83
+      Caption = 'Авторизация'
+      ParentColor = False
+    end
+    object LabelFamily: TLabel
+      Left = 29
+      Height = 14
+      Top = 136
+      Width = 59
+      Caption = 'Фамилия'
+      ParentColor = False
+    end
+    object LabelFirstName: TLabel
+      Left = 29
+      Height = 14
+      Top = 184
+      Width = 27
+      Caption = 'Имя'
+      ParentColor = False
+    end
+    object LabelLastName: TLabel
+      Left = 29
+      Height = 14
+      Top = 232
+      Width = 57
+      Caption = 'Отчество'
+      ParentColor = False
+    end
+    object LabelGroup: TLabel
+      Left = 29
+      Height = 14
+      Top = 88
+      Width = 44
+      Caption = 'Группа'
+      ParentColor = False
+    end
+    object ButtonNextUser: TButton
+      Left = 269
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Дальше'
+      OnClick = ButtonNextUserClick
+      TabOrder = 0
+    end
+    object EditGroup: TEdit
+      Left = 112
+      Height = 27
+      Top = 80
+      Width = 280
+      TabOrder = 1
+    end
+    object EditFamily: TEdit
+      Left = 112
+      Height = 27
+      Top = 128
+      Width = 280
+      TabOrder = 2
+    end
+    object EditFirstName: TEdit
+      Left = 112
+      Height = 27
+      Top = 176
+      Width = 280
+      TabOrder = 3
+    end
+    object EditLastName: TEdit
+      Left = 112
+      Height = 27
+      Top = 224
+      Width = 280
+      TabOrder = 4
+    end
+    object ButtonBackUser: TButton
+      Left = 29
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Назад'
+      OnClick = ButtonBackUserClick
+      TabOrder = 5
+    end
+  end
+  object PanelAuthorizationAdmin: TPanel
+    Left = 584
+    Height = 368
+    Top = 392
+    Width = 424
+    ClientHeight = 368
+    ClientWidth = 424
+    TabOrder = 2
+    Visible = False
+    object LabelAuthorizationAdmin: TLabel
+      Left = 168
+      Height = 14
+      Top = 16
+      Width = 83
+      Caption = 'Авторизация'
+      ParentColor = False
+    end
+    object LabelPassword: TLabel
+      Left = 29
+      Height = 14
+      Top = 88
+      Width = 47
+      Caption = 'Пароль'
+      ParentColor = False
+    end
+    object ButtonNextAdmin: TButton
+      Left = 269
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Дальше'
+      OnClick = ButtonNextAdminClick
+      TabOrder = 0
+    end
+    object EditPassword: TEdit
+      Left = 112
+      Height = 27
+      Top = 80
+      Width = 280
+      EchoMode = emPassword
+      ParentShowHint = False
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object ButtonBackAdmin: TButton
+      Left = 29
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Назад'
+      OnClick = ButtonBackAdminClick
+      TabOrder = 2
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 273
+    top = 506
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object MenuItem2: TMenuItem
+        Caption = 'Выход'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+end

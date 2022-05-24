@@ -1,0 +1,107 @@
+object AdminWindow: TAdminWindow
+  Left = 443
+  Height = 768
+  Top = 125
+  Width = 1024
+  Caption = 'Окно администратора'
+  ClientHeight = 744
+  ClientWidth = 1024
+  Constraints.MaxHeight = 768
+  Constraints.MaxWidth = 1024
+  Constraints.MinHeight = 768
+  Constraints.MinWidth = 1024
+  Menu = MenuItems
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 768
+    Top = 0
+    Width = 1024
+    ClientHeight = 768
+    ClientWidth = 1024
+    TabOrder = 0
+    object ListBox1: TListBox
+      Left = 16
+      Height = 696
+      Top = 48
+      Width = 992
+      ItemHeight = 0
+      ScrollWidth = 990
+      TabOrder = 0
+      TopIndex = -1
+    end
+    object CreateTestButton: TButton
+      Left = 16
+      Height = 25
+      Top = 16
+      Width = 104
+      Caption = 'Добавить'
+      OnClick = CreateTestButtonClick
+      TabOrder = 1
+    end
+    object DeleteTestButton: TButton
+      Left = 136
+      Height = 25
+      Top = 16
+      Width = 104
+      Caption = 'Удалить'
+      OnClick = DeleteTestButtonClick
+      TabOrder = 2
+    end
+    object EditTestButton: TButton
+      Left = 256
+      Height = 25
+      Top = 16
+      Width = 104
+      Caption = 'Редактировать'
+      OnClick = EditTestButtonClick
+      TabOrder = 3
+    end
+    object BackButton: TButton
+      Left = 904
+      Height = 25
+      Top = 16
+      Width = 104
+      Caption = 'Назад'
+      OnClick = BackButtonClick
+      TabOrder = 4
+    end
+  end
+  object MenuItems: TMainMenu
+    left = 749
+    top = 8
+    object ItemFile: TMenuItem
+      Caption = 'Файл'
+      object ItemResults: TMenuItem
+        Caption = 'Результаты'
+        OnClick = ItemResultsClick
+      end
+      object ItemChangePassword: TMenuItem
+        Caption = 'Изменить пароль'
+        OnClick = ItemChangePasswordClick
+      end
+      object ItemBack: TMenuItem
+        Caption = 'Назад'
+        OnClick = BackButtonClick
+      end
+    end
+    object ItemEditor: TMenuItem
+      Caption = 'Редактор'
+      object ItemAdd: TMenuItem
+        Caption = 'Добавить'
+        OnClick = CreateTestButtonClick
+      end
+      object ItemEdit: TMenuItem
+        Caption = 'Редактировать'
+        OnClick = EditTestButtonClick
+      end
+      object ItemDelete: TMenuItem
+        Caption = 'Удалить'
+        OnClick = DeleteTestButtonClick
+      end
+    end
+  end
+end

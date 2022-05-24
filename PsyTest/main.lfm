@@ -1,0 +1,238 @@
+object MainForm: TMainForm
+  Left = 422
+  Height = 768
+  Top = 86
+  Width = 1024
+  Caption = 'PsyTestSGU'
+  ClientHeight = 748
+  ClientWidth = 1024
+  Constraints.MaxHeight = 768
+  Constraints.MaxWidth = 1024
+  Constraints.MinHeight = 768
+  Constraints.MinWidth = 1024
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  OnShow = ButtonBackUserClick
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object PanelMain: TPanel
+    Left = 16
+    Height = 368
+    Top = 16
+    Width = 424
+    ClientHeight = 368
+    ClientWidth = 424
+    TabOrder = 0
+    object ButtonAdmin: TButton
+      Left = 75
+      Height = 84
+      Top = 64
+      Width = 274
+      Caption = 'Администратор'
+      Font.Height = -23
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      OnClick = ButtonAdminClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object ButtonUser: TButton
+      Left = 72
+      Height = 84
+      Top = 216
+      Width = 274
+      Caption = 'Пользователь'
+      Font.Height = -23
+      Font.Name = 'Times New Roman'
+      Font.Style = [fsBold]
+      OnClick = ButtonUserClick
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object PanelAuthorizationAdmin: TPanel
+    Left = 584
+    Height = 368
+    Top = 384
+    Width = 424
+    ClientHeight = 368
+    ClientWidth = 424
+    TabOrder = 1
+    Visible = False
+    object LabelAuthorizationAdmin: TLabel
+      Left = 160
+      Height = 21
+      Top = 16
+      Width = 105
+      Caption = 'Авторизация'
+      Font.Height = -19
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelPassword: TLabel
+      Left = 29
+      Height = 19
+      Top = 84
+      Width = 49
+      Caption = 'Пароль'
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object ButtonNextAdmin: TButton
+      Left = 269
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Дальше'
+      Font.Name = 'Times New Roman'
+      OnClick = ButtonNextAdminClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object EditPassword: TEdit
+      Left = 112
+      Height = 23
+      Top = 80
+      Width = 280
+      EchoMode = emPassword
+      ParentShowHint = False
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object ButtonBackAdmin: TButton
+      Left = 29
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Назад'
+      Font.Name = 'Times New Roman'
+      OnClick = ButtonBackAdminClick
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object PanelAuthorizationUser: TPanel
+    Left = 584
+    Height = 368
+    Top = 16
+    Width = 424
+    ClientHeight = 368
+    ClientWidth = 424
+    TabOrder = 2
+    Visible = False
+    object LabelAuthorizationUser: TLabel
+      Left = 160
+      Height = 21
+      Top = 24
+      Width = 105
+      Caption = 'Авторизация'
+      Font.Height = -19
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelFamily: TLabel
+      Left = 29
+      Height = 19
+      Top = 132
+      Width = 63
+      Caption = 'Фамилия'
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelFirstName: TLabel
+      Left = 29
+      Height = 19
+      Top = 180
+      Width = 28
+      Caption = 'Имя'
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelLastName: TLabel
+      Left = 29
+      Height = 19
+      Top = 228
+      Width = 64
+      Caption = 'Отчество'
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LabelGroup: TLabel
+      Left = 29
+      Height = 19
+      Top = 84
+      Width = 48
+      Caption = 'Группа'
+      Font.Name = 'Times New Roman'
+      ParentColor = False
+      ParentFont = False
+    end
+    object ButtonNextUser: TButton
+      Left = 269
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Дальше'
+      Font.Name = 'Times New Roman'
+      OnClick = ButtonNextUserClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object EditGroup: TEdit
+      Left = 112
+      Height = 23
+      Top = 80
+      Width = 280
+      TabOrder = 1
+    end
+    object EditFamily: TEdit
+      Left = 112
+      Height = 23
+      Top = 128
+      Width = 280
+      TabOrder = 2
+    end
+    object EditFirstName: TEdit
+      Left = 112
+      Height = 23
+      Top = 176
+      Width = 280
+      TabOrder = 3
+    end
+    object EditLastName: TEdit
+      Left = 112
+      Height = 23
+      Top = 224
+      Width = 280
+      TabOrder = 4
+    end
+    object ButtonBackUser: TButton
+      Left = 29
+      Height = 33
+      Top = 320
+      Width = 123
+      Caption = 'Назад'
+      Font.Name = 'Times New Roman'
+      OnClick = ButtonBackUserClick
+      ParentFont = False
+      TabOrder = 5
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 273
+    top = 506
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object MenuItem2: TMenuItem
+        Caption = 'Выход'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+end

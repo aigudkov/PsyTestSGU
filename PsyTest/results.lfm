@@ -1,0 +1,55 @@
+object FormResult: TFormResult
+  Left = 237
+  Height = 768
+  Top = 129
+  Width = 1024
+  Caption = 'Результаты'
+  ClientHeight = 768
+  ClientWidth = 1024
+  Constraints.MaxHeight = 768
+  Constraints.MaxWidth = 1024
+  Constraints.MinHeight = 768
+  Constraints.MinWidth = 1024
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object BackButton: TButton
+    Left = 904
+    Height = 25
+    Top = 16
+    Width = 104
+    Caption = 'Назад'
+    Font.Name = 'Times New Roman'
+    OnClick = BackButtonClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object DeleteButton: TButton
+    Left = 16
+    Height = 25
+    Top = 16
+    Width = 104
+    Caption = 'Удалить'
+    Font.Name = 'Times New Roman'
+    OnClick = DeleteButtonClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object StringGrid1: TStringGrid
+    Left = 16
+    Height = 692
+    Top = 56
+    Width = 992
+    ColCount = 4
+    FixedCols = 0
+    Font.Name = 'Times New Roman'
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goSmoothScroll, goFixedColSizing]
+    ParentFont = False
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 2
+    TitleFont.Name = 'Times New Roman'
+  end
+end

@@ -1,0 +1,291 @@
+{
+  "test" : "Шкала оценки потребности в достижении",
+  "questions" : [
+    {
+      "title" : "1. Думаю, что успех в жизни скорее всего зависит от случая, чем от расчета.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "2. Если я лишусь любимого занятия, жизнь для меня потеряет всякий смысл.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "3. Для меня в любом деле важнее не его исполнение, а конечный результат.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "4. Считаю, что люди больше страдают от неудач на работе, чем от плохих взаимоотношений с близкими.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "5. По моему мнению, большинство людей живут далекими целями, а не близкими.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "6. В жизни у меня было больше успехов, чем неудач.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "7. Эмоциональные люди мне нравятся больше, чем деятельные.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "8. Даже в обычной работе я стараюсь усовершенствовать некоторые ее элементы.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "9. Поглощенный мыслями об успехе, я могу забыть о мерах предостороженности.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "10. Мои близкие считают меня ленивым.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "11. Думаю, что в моих неудачах повинны скорее всего обстоятельства, чем я сам.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "12. Терпения во мне больше, чем способностей.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "13. Мои родители слишком строго контролировали меня.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "14. Лень, а не сомнение в успехе вынуждает меня часто отказываться от своих намерений.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "15. Думаю, что я уверенный в себе человек.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "16. Ради успеха я могу рискнуть, даже если шансы невелики.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "17. Я усердный человек.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "18. Когда все идет гладко, моя энергия усиливается.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "19. Если бы я был журналистом, я писал бы скорее об оригинальных изобретениях людей, чем о происшествиях.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "20. Мои близкие обычно не разделяют моих планов.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : false
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : true
+        }
+      ]
+    },
+    {
+      "title" : "21. Уровень моих требований к жизни ниже, чем у моих товарищей.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    },
+    {
+      "title" : "22. Мне кажется, что настойчивости во мне больше, чем способностей.",
+      "answers" : [
+        {
+          "name" : "Да",
+          "correctAnswer" : true
+        },
+        {
+          "name" : "Нет",
+          "correctAnswer" : false
+        }
+      ]
+    }
+  ]
+}

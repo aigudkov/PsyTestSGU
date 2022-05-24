@@ -1,0 +1,84 @@
+object FormChangePassword: TFormChangePassword
+  Left = 285
+  Height = 300
+  Top = 258
+  Width = 300
+  Caption = 'Изменение пароля'
+  ClientHeight = 300
+  ClientWidth = 300
+  Constraints.MaxHeight = 300
+  Constraints.MaxWidth = 300
+  Constraints.MinHeight = 300
+  Constraints.MinWidth = 300
+  Position = poScreenCenter
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 14
+    Top = 16
+    Width = 152
+    Caption = 'Введите старый пароль:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 14
+    Top = 96
+    Width = 148
+    Caption = 'Введите новый пароль:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 14
+    Top = 176
+    Width = 163
+    Caption = 'Повторите новый пароль:'
+    ParentColor = False
+  end
+  object EditOldPassword: TEdit
+    Left = 16
+    Height = 27
+    Top = 48
+    Width = 264
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 0
+  end
+  object EditNewPassword: TEdit
+    Left = 16
+    Height = 27
+    Top = 128
+    Width = 264
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+  end
+  object EditRepeatNewPassword: TEdit
+    Left = 16
+    Height = 27
+    Top = 208
+    Width = 264
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 2
+  end
+  object ButtonConfirm: TButton
+    Left = 176
+    Height = 25
+    Top = 256
+    Width = 104
+    Caption = 'Принять'
+    OnClick = ButtonConfirmClick
+    TabOrder = 3
+  end
+  object ButtonBack: TButton
+    Left = 16
+    Height = 25
+    Top = 256
+    Width = 104
+    Caption = 'Отменить'
+    OnClick = ButtonBackClick
+    TabOrder = 4
+  end
+end

@@ -1,7 +1,7 @@
 object FormResult: TFormResult
   Left = 237
   Height = 768
-  Top = 129
+  Top = 242
   Width = 1024
   Caption = 'Результаты'
   ClientHeight = 768
@@ -14,16 +14,14 @@ object FormResult: TFormResult
   OnCreate = FormCreate
   OnShow = FormShow
   Position = poScreenCenter
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.2.0.4'
   object BackButton: TButton
     Left = 904
     Height = 25
     Top = 16
     Width = 104
     Caption = 'Назад'
-    Font.Name = 'Times New Roman'
     OnClick = BackButtonClick
-    ParentFont = False
     TabOrder = 0
   end
   object DeleteButton: TButton
@@ -32,9 +30,7 @@ object FormResult: TFormResult
     Top = 16
     Width = 104
     Caption = 'Удалить'
-    Font.Name = 'Times New Roman'
     OnClick = DeleteButtonClick
-    ParentFont = False
     TabOrder = 1
   end
   object StringGrid1: TStringGrid
@@ -44,12 +40,33 @@ object FormResult: TFormResult
     Width = 992
     ColCount = 4
     FixedCols = 0
-    Font.Name = 'Times New Roman'
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goSmoothScroll, goFixedColSizing]
-    ParentFont = False
     RowCount = 1
     ScrollBars = ssNone
     TabOrder = 2
-    TitleFont.Name = 'Times New Roman'
+  end
+  object ExportButton: TButton
+    Left = 520
+    Height = 25
+    Top = 16
+    Width = 128
+    Caption = 'Экспорт данных...'
+    OnClick = ExportButtonClick
+    TabOrder = 3
+  end
+  object StatsTestButton: TButton
+    Left = 352
+    Height = 25
+    Top = 16
+    Width = 163
+    Caption = 'Индивидуальная статистика'
+    OnClick = StatsTestButtonClick
+    TabOrder = 4
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'CSV файл|*.csv'
+    InitialDir = 'PsyTest/export'
+    Left = 60
+    Top = 740
   end
 end

@@ -1,0 +1,106 @@
+object StatsTestWindow: TStatsTestWindow
+  Left = 159
+  Height = 400
+  Top = 484
+  Width = 632
+  Caption = 'Статистика тестов пользователей'
+  ClientHeight = 400
+  ClientWidth = 632
+  DoubleBuffered = True
+  OnClose = FormClose
+  ParentDoubleBuffered = False
+  LCLVersion = '2.2.0.4'
+  object UserSelector: TComboBox
+    Left = 104
+    Height = 23
+    Top = 8
+    Width = 280
+    ItemHeight = 15
+    OnSelect = StudentSelectorOnSelect
+    ReadOnly = True
+    Sorted = True
+    TabOrder = 0
+    Text = 'Выберите пользователя...'
+  end
+  object TestList: TListBox
+    Left = 16
+    Height = 320
+    Top = 64
+    Width = 306
+    ItemHeight = 0
+    OnSelectionChange = TestListSelectionChange
+    Sorted = True
+    TabOrder = 1
+  end
+  object ResultText: TLabel
+    Left = 338
+    Height = 15
+    Top = 160
+    Width = 56
+    Caption = 'Результат:'
+    Visible = False
+  end
+  object ResultDesc: TLabel
+    Left = 372
+    Height = 15
+    Top = 184
+    Width = 57
+    Caption = 'ResultDesc'
+    Visible = False
+  end
+  object TestText: TLabel
+    Left = 338
+    Height = 15
+    Top = 64
+    Width = 26
+    Caption = 'Тест:'
+    Visible = False
+  end
+  object TestName: TLabel
+    Left = 372
+    Height = 15
+    Top = 88
+    Width = 52
+    Caption = 'TestName'
+    Visible = False
+  end
+  object UserText: TLabel
+    Left = 338
+    Height = 15
+    Top = 112
+    Width = 80
+    Caption = 'Пользователь:'
+    Visible = False
+  end
+  object UserName: TLabel
+    Left = 372
+    Height = 15
+    Top = 136
+    Width = 55
+    Caption = 'UserName'
+    Visible = False
+  end
+  object BackButton: TButton
+    Left = 446
+    Height = 25
+    Top = 359
+    Width = 170
+    Caption = 'Назад'
+    OnClick = BackButtonClick
+    TabOrder = 2
+  end
+  object UserSelectorLabel: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 80
+    Caption = 'Пользователь:'
+  end
+  object TestListDescription: TLabel
+    Left = 16
+    Height = 15
+    Top = 40
+    Width = 113
+    Caption = 'Выполненные тесты'
+  end
+end

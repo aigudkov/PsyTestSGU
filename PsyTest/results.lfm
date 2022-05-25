@@ -12,6 +12,7 @@ object FormResult: TFormResult
   Constraints.MinWidth = 1024
   OnClose = FormClose
   OnCreate = FormCreate
+  OnHide = FormHide
   OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '2.2.0.4'

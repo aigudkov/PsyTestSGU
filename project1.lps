@@ -8,7 +8,7 @@
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="3" Y="22"/>
+        <CursorPos Y="29"/>
         <UsageCount Value="135"/>
       </Unit0>
       <Unit1>
@@ -80,8 +80,8 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="84"/>
-        <CursorPos X="139" Y="114"/>
+        <TopLine Value="56"/>
+        <CursorPos X="27" Y="94"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -164,7 +164,7 @@
         <UsageCount Value="10"/>
       </Unit15>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="PsyTest/test.pas"/>
         <Caret Line="175" Column="28" TopLine="146"/>
@@ -276,6 +276,14 @@
         <Filename Value="PsyTest/stats.pas"/>
         <Caret Line="35" Column="15"/>
       </Position28>
+      <Position29>
+        <Filename Value="PsyTest/results.pas"/>
+        <Caret Line="142" Column="20" TopLine="87"/>
+      </Position29>
+      <Position30>
+        <Filename Value="PsyTest/results.pas"/>
+        <Caret Line="149" Column="34" TopLine="89"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

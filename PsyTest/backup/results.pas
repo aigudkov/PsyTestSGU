@@ -117,7 +117,7 @@ begin
   for i:= 0 to StringGrid1.RowCount-1 do begin
     tempString:='';
     for j:= 0 to StringGrid1.ColCount-1 do begin
-      tempString:= tempString + '"' + StringGrid1.Cells[j,i] + '";'
+      tempString:= tempString + '"' + StringGrid1.Cells[j,i].Replace('"','""') + '";'
     end;
     exportData.Add(tempString);
   end;
@@ -139,7 +139,7 @@ end;
 
 procedure TFormResult.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  StringGrid1.RowCount:=1;
+  StringGrid1.Clear;
   admin.AdminWindow.Visible:=true;
 end;
 

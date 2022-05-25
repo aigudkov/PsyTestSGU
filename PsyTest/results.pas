@@ -23,6 +23,7 @@ type
     procedure ExportButtonClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure FormHide(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure StatsTestButtonClick(Sender: TObject);
   private
@@ -86,6 +87,11 @@ begin
   StringGrid1.Cells[1,0]:='Название теста';
   StringGrid1.Cells[2,0]:='ФИО';
   StringGrid1.Cells[3,0]:='Результат';
+end;
+
+procedure TFormResult.FormHide(Sender: TObject);
+begin
+  StringGrid1.RowCount:=1;
 end;
 
 procedure TFormResult.DeleteButtonClick(Sender: TObject);

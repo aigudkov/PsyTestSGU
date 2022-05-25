@@ -117,7 +117,7 @@ begin
   for i:= 0 to StringGrid1.RowCount-1 do begin
     tempString:='';
     for j:= 0 to StringGrid1.ColCount-1 do begin
-      tempString:= tempString + StringGrid1.Cells[j,i] + ';'
+      tempString:= tempString + '"' + StringGrid1.Cells[j,i].Replace('"','""') + '";'
     end;
     exportData.Add(tempString);
   end;

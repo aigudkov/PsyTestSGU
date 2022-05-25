@@ -78,9 +78,10 @@
         <ComponentName Value="FormResult"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="91"/>
-        <CursorPos X="3" Y="142"/>
+        <TopLine Value="84"/>
+        <CursorPos X="79" Y="120"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -98,74 +99,72 @@
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
+        <Filename Value="PsyTest/stats.lfm"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="PsyTest/stats.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="StatsTestWindow"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="45"/>
+        <CursorPos X="46" Y="93"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
         <Filename Value="/usr/lib/lazarus/2.0.6/lcl/include/control.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3532"/>
         <CursorPos Y="3550"/>
         <UsageCount Value="3"/>
-      </Unit8>
-      <Unit9>
+      </Unit10>
+      <Unit11>
         <Filename Value="/usr/lib/lazarus/2.0.6/lcl/include/customlistbox.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="176"/>
         <CursorPos Y="203"/>
         <UsageCount Value="2"/>
-      </Unit9>
-      <Unit10>
+      </Unit11>
+      <Unit12>
         <Filename Value="/usr/lib/lazarus/2.0.6/components/lazutils/laztracer.pas"/>
         <UnitName Value="LazTracer"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos Y="50"/>
         <UsageCount Value="5"/>
-      </Unit10>
-      <Unit11>
+      </Unit12>
+      <Unit13>
         <Filename Value="/usr/lib/lazarus/2.0.6/lcl/grids.pas"/>
         <UnitName Value="Grids"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="5236"/>
         <CursorPos X="46" Y="5250"/>
         <UsageCount Value="9"/>
-      </Unit11>
-      <Unit12>
+      </Unit13>
+      <Unit14>
         <Filename Value="C:/Lazarus/lcl/forms.pp"/>
         <UnitName Value="Forms"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="629"/>
         <CursorPos X="14" Y="667"/>
         <UsageCount Value="10"/>
-      </Unit12>
-      <Unit13>
+      </Unit14>
+      <Unit15>
         <Filename Value="C:/Lazarus/fpc/3.2.2/source/rtl/objpas/sysutils/sysencodingh.inc"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="67"/>
         <CursorPos X="24" Y="107"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit13>
-      <Unit14>
-        <Filename Value="PsyTest/stats.lfm"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="21"/>
-        <DefaultSyntaxHighlighter Value="LFM"/>
-      </Unit14>
-      <Unit15>
-        <Filename Value="PsyTest/stats.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="StatsTestWindow"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="45"/>
-        <CursorPos X="6" Y="85"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit15>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
         <Filename Value="PsyTest/test.pas"/>
         <Caret Line="175" Column="28" TopLine="146"/>
@@ -255,36 +254,28 @@
       </Position22>
       <Position23>
         <Filename Value="PsyTest/results.pas"/>
-        <Caret Line="39" Column="17" TopLine="46"/>
+        <Caret Line="142" Column="3" TopLine="105"/>
       </Position23>
       <Position24>
-        <Filename Value="PsyTest/main.pas"/>
-        <Caret Line="84" Column="9" TopLine="87"/>
+        <Filename Value="PsyTest/results.pas"/>
+        <Caret Line="81" Column="3" TopLine="79"/>
       </Position24>
       <Position25>
         <Filename Value="PsyTest/results.pas"/>
-        <Caret Line="142" Column="3" TopLine="105"/>
+        <Caret Line="109" Column="65" TopLine="79"/>
       </Position25>
       <Position26>
-        <Filename Value="PsyTest/results.pas"/>
-        <Caret Line="81" Column="3" TopLine="79"/>
+        <Filename Value="PsyTest/stats.pas"/>
+        <Caret Line="95" Column="30" TopLine="40"/>
       </Position26>
       <Position27>
-        <Filename Value="PsyTest/results.pas"/>
-        <Caret Line="109" Column="65" TopLine="79"/>
+        <Filename Value="PsyTest/stats.pas"/>
+        <Caret Line="110" Column="31" TopLine="46"/>
       </Position27>
       <Position28>
         <Filename Value="PsyTest/stats.pas"/>
-        <Caret Line="95" Column="30" TopLine="40"/>
-      </Position28>
-      <Position29>
-        <Filename Value="PsyTest/stats.pas"/>
-        <Caret Line="110" Column="31" TopLine="46"/>
-      </Position29>
-      <Position30>
-        <Filename Value="PsyTest/stats.pas"/>
         <Caret Line="35" Column="15"/>
-      </Position30>
+      </Position28>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

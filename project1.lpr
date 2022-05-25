@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, editor, admin, user, test, main, results, changepass
+  Forms, editor, admin, user, test, main, results, changepass, stats
   { you can add units after this };
 
 {$R *.res}
@@ -24,6 +24,7 @@ begin
   Application.CreateForm(TUserWindow, UserWindow);
   Application.CreateForm(TTestWindow, TestWindow);
   Application.CreateForm(TFormChangePassword, FormChangePassword);
+  Application.CreateForm(TStatsTestWindow, StatsTestWindow);
   Application.Run;
 end.
 

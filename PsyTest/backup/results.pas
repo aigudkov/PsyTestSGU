@@ -13,13 +13,18 @@ type
 
   TFormResult = class(TForm)
     BackButton: TButton;
+    StatsTestButton: TButton;
+    ExportButton: TButton;
     DeleteButton: TButton;
+    SaveDialog1: TSaveDialog;
     StringGrid1: TStringGrid;
     procedure BackButtonClick(Sender: TObject);
     procedure DeleteButtonClick(Sender: TObject);
+    procedure ExportButtonClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure StatsTestButtonClick(Sender: TObject);
   private
 
   public
@@ -73,10 +78,10 @@ end;
 
 procedure TFormResult.FormCreate(Sender: TObject);
 begin
-  StringGrid1.ColWidths[0]:=58;
-  StringGrid1.ColWidths[1]:=490;
+  StringGrid1.ColWidths[0]:=53;
+  StringGrid1.ColWidths[1]:=505;
   StringGrid1.ColWidths[2]:=292;
-  StringGrid1.ColWidths[3]:=150;
+  StringGrid1.ColWidths[3]:=140;
   StringGrid1.Cells[0,0]:='Группа';
   StringGrid1.Cells[1,0]:='Название теста';
   StringGrid1.Cells[2,0]:='ФИО';
@@ -102,6 +107,31 @@ begin
   end;
 end;
 
+procedure TFormResult.ExportButtonClick(Sender: TObject);
+var
+  exportData: TStringList;
+  tempString: string;
+  i,j:        integer;
+begin
+  exportData := TStringList.Create;
+  for i:= 0 to StringGrid1.RowCount-1 do begin
+    tempString:='';
+    for j:= 0 to StringGrid1.ColCount-1 do begin
+      tempString:= tempString + StringGrid1.Cells[j,i] + ';'
+    end;
+    exportData.Add(tempString);
+  end;
+
+  SaveDialog1.FileName:='PsyTestExport.csv';
+  if SaveDialog1.Execute then
+  begin
+       exportData.WriteBOM:=true;
+       exportData.SaveToFile(SaveDialog1.FileName, TEncoding.UTF8);
+       AdminWindow.ListBox1.Clear;
+       AdminWindow.FormCreate(nil);
+  end;
+end;
+
 procedure TFormResult.BackButtonClick(Sender: TObject);
 begin
   close;
@@ -116,6 +146,35 @@ end;
 procedure TFormResult.FormShow(Sender: TObject);
 begin
   CheckResultsUsers;
+end;
+
+procedure TFormResult.StatsTestButtonClick(Sender: TObject);
+var
+  JResult:TJSONData;
+  studentList: TStringList;
+  resultFiles: TStringList;
+  i,j:integer;
+begin
+     try
+        stats.StatsTestWindow.Show;
+        FormResult.Visible:=false;
+        studentList := TStringList.create;
+        studentList.Sorted:= true;
+        studentList.Duplicates:= dupIgnore;
+        resultFiles := FindAllFiles('PsyTest/results/', '*.json', true);
+        for i:=0 to (resultFiles.Count-1)do
+          begin
+            JResult:=GetJSON(ReadFileToString(resultFiles[i]));
+            studentList.add(JResult.FindPath('group').AsString+' '+JResult.FindPath('surname').AsString+' '+JResult.FindPath('firstname').AsString+' '+JResult.FindPath('lastname').AsString);
+          end;
+        for j:=0 to (studentList.Count-1)do
+          begin
+            stats.StatsTestWindow.UserSelector.Items.Add(studentList[j]);
+          end;
+     finally
+        resultFiles.Free;
+        FreeAndNil(JResult);
+     end;
 end;
 
 end.

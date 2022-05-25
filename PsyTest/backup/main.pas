@@ -14,29 +14,29 @@ type
 
   TMainForm = class(TForm)
     ButtonAdmin: TButton;
-    ButtonBackUser: TButton;
     ButtonBackAdmin: TButton;
+    ButtonBackUser: TButton;
     ButtonNextAdmin: TButton;
-    ButtonUser: TButton;
     ButtonNextUser: TButton;
-    EditGroup: TEdit;
+    ButtonUser: TButton;
     EditFamily: TEdit;
     EditFirstName: TEdit;
-    EditPassword: TEdit;
+    EditGroup: TEdit;
     EditLastName: TEdit;
-    LabelAuthorizationUser: TLabel;
+    EditPassword: TEdit;
     LabelAuthorizationAdmin: TLabel;
+    LabelAuthorizationUser: TLabel;
     LabelFamily: TLabel;
     LabelFirstName: TLabel;
-    LabelPassword: TLabel;
-    LabelLastName: TLabel;
     LabelGroup: TLabel;
+    LabelLastName: TLabel;
+    LabelPassword: TLabel;
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
     PanelAuthorizationAdmin: TPanel;
-    PanelMain: TPanel;
     PanelAuthorizationUser: TPanel;
+    PanelMain: TPanel;
     procedure ButtonAdminClick(Sender: TObject);
     procedure ButtonBackAdminClick(Sender: TObject);
     procedure ButtonBackUserClick(Sender: TObject);

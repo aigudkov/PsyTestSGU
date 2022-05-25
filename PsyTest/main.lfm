@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 422
+  Left = 182
   Height = 768
-  Top = 86
+  Top = 368
   Width = 1024
   Caption = 'PsyTestSGU'
   ClientHeight = 748
@@ -14,7 +14,7 @@ object MainForm: TMainForm
   OnCreate = FormCreate
   OnShow = ButtonBackUserClick
   Position = poScreenCenter
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.2.0.4'
   object PanelMain: TPanel
     Left = 16
     Height = 368
@@ -67,17 +67,15 @@ object MainForm: TMainForm
       Caption = 'Авторизация'
       Font.Height = -19
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object LabelPassword: TLabel
       Left = 29
-      Height = 19
+      Height = 15
       Top = 84
-      Width = 49
+      Width = 39
       Caption = 'Пароль'
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object ButtonNextAdmin: TButton
@@ -130,47 +128,42 @@ object MainForm: TMainForm
       Caption = 'Авторизация'
       Font.Height = -19
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object LabelFamily: TLabel
       Left = 29
-      Height = 19
+      Height = 15
       Top = 132
-      Width = 63
+      Width = 45
       Caption = 'Фамилия'
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object LabelFirstName: TLabel
       Left = 29
-      Height = 19
+      Height = 15
       Top = 180
-      Width = 28
+      Width = 22
       Caption = 'Имя'
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object LabelLastName: TLabel
       Left = 29
-      Height = 19
+      Height = 15
       Top = 228
-      Width = 64
+      Width = 47
       Caption = 'Отчество'
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object LabelGroup: TLabel
       Left = 29
-      Height = 19
+      Height = 15
       Top = 84
-      Width = 48
+      Width = 37
       Caption = 'Группа'
       Font.Name = 'Times New Roman'
-      ParentColor = False
       ParentFont = False
     end
     object ButtonNextUser: TButton
@@ -225,8 +218,8 @@ object MainForm: TMainForm
     end
   end
   object MainMenu1: TMainMenu
-    left = 273
-    top = 506
+    Left = 273
+    Top = 506
     object MenuItem1: TMenuItem
       Caption = 'Файл'
       object MenuItem2: TMenuItem
